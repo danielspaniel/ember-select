@@ -1,6 +1,33 @@
 # ember-select-box
 
-This README outlines the details of collaborating on this Ember addon.
+##Why 
+
+- When you want simple native HTML select box wrapper  
+  - that creates the options for you
+  - uses closure actions for sending changes
+  - allows you to use an ember data model as an option value
+- ember-power-select
+  - does not work on the iPad when using pencil
+  - is a bit of overkill at times
+- ember-selectx 
+  - does not work ( at least for me )
+  - does not create the options for you    
+
+
+##Usage 
+
+```html
+
+{{select-box
+    prompt="Select User"
+    labelPath='name'
+    options=users
+    selected=selectedUser
+    onChange=(action setProperty user 'name')
+}}
+
+
+```
 
 ## Installation
 
@@ -15,12 +42,4 @@ This README outlines the details of collaborating on this Ember addon.
 
 ## Running Tests
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
