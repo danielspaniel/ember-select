@@ -16,7 +16,7 @@
 
 ##Usage 
 
-```html
+```handlebars
 
 {{select-box
     prompt="Select User"
