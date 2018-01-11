@@ -1,0 +1,17 @@
+{{#if prompt}}
+  <option disabled selected={{nothingSelected}}>{{prompt}}</option>
+{{/if}}
+{{#each options as |item|}}
+  <option value={{if valuePath (get item valuePath) item}}
+          selected={{select-box/is-selected item selected valuePath}}>
+    {{#if labelHelper}}
+      {{select-box/send-to-helper labelHelper item}}
+    {{else}}
+      {{#if labelPath}}
+        {{get item labelPath}}
+      {{else}}
+        {{item}}
+      {{/if}}
+    {{/if}}
+  </option>
+{{/each}}
