@@ -22,8 +22,8 @@
     prompt="Select User"
     labelPath='name'
     options=users
-    selected=selectedUser
-    onChange=(action setProperty user 'name')
+    selected=account.user
+    onChange=(action setProperty account 'user')
 }}
 
 
