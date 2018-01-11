@@ -1,6 +1,6 @@
 # ember-select-box
 
-##Why 
+## Why 
 
 - When you want simple native HTML select box wrapper  
   - that creates the options for you
@@ -14,7 +14,7 @@
   - does not create the options for you    
 
 
-##Usage 
+## Usage 
 
 ```handlebars
 
