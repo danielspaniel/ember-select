@@ -1,9 +1,11 @@
 {
-  "name": "ember-select-box",
+  "name": "ember-select",
   "version": "0.1.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Ember component that wraps native HTML <select> that works with Ember Data models",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "select-box",
+    "select"
   ],
   "license": "MIT",
   "author": "",
